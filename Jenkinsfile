@@ -30,8 +30,7 @@ pipeline {
                         source /home/ec2-user/app/venv/bin/activate
                         cd /home/ec2-user/app/
                         pip install -r requirements.txt
-                        sudo systemctl restart flaskapp.service
-                        ls
+                        sudo systemctl restart flask-app.service
                         EOF
                     '''
                 }
